@@ -32,7 +32,7 @@ bot.on("message", function(message) {
 
 		case "purge":
 			if(!message.member.roles.some(r=>["Les Salopes de Banjolino"].includes(r.name))) {
-				message.channel.sendMessage("Tu n'as pas le droit, attends d'être une Salope")
+				message.channel.sendMessage("Hé toi, seul les Salopes ont droit de faire ça")
 				return;
 			};
 			
