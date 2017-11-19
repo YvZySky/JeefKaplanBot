@@ -42,15 +42,3 @@ bot.on("message", function(message) {
 			break;
 	};
 });
-
-
-bot.on("message", message => {
-    if (message.content === prefix + "purge"){
-        if(message.member.roles.some(r=>["Les Salopes de Banjolino"].includes(r.name))) {
-        message.channel.sendMessage("Le chat va être clean")
-        message.channel.bulkDelete(100)
-        }
-        else message.channel.sendMessage("Tu n'as pas la permission !")
-    }
-})
-
