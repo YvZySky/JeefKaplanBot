@@ -31,13 +31,13 @@ bot.on("message", function(message) {
 			return;
 
 		case "purge":
-			if(!message.member.roles.some(r=>["DJ"].includes(r.name))) {
-				message.channel.sendMessage("Tu n'as pas le droit, attends d'être DJ")
+			if(!message.member.roles.some(r=>["Les Salopes de Banjolino"].includes(r.name))) {
+				message.channel.sendMessage("Tu n'as pas le droit, attends d'être une Salope")
 				return;
-		
+			};
+			
 			message.channel.sendMessage("Le chat va être clean")
 			message.channel.bulkDelete(100)
-			};
 			
 			break;
 	};
